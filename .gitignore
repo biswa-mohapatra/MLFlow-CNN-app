@@ -131,3 +131,4 @@ dmypy.json
 mlruns/
 env/
 data/
+running_logs.log 
