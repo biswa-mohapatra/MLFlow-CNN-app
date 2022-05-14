@@ -1,0 +1,68 @@
+[2022-05-14 12:11:10,634: INFO: stage_01_get_data]: 
+********************
+[2022-05-14 12:11:10,634: INFO: stage_01_get_data]: >>>>> stage GET_DATA started <<<<<
+[2022-05-14 12:11:10,635: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-05-14 12:11:10,636: INFO: stage_01_get_data]: >>>>> stage GET_DATA completed!<<<<<
+
+[2022-05-14 12:13:05,837: INFO: stage_01_get_data]: 
+********************
+[2022-05-14 12:13:05,837: INFO: stage_01_get_data]: >>>>> stage GET_DATA started <<<<<
+[2022-05-14 12:13:05,839: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-05-14 12:13:05,839: INFO: stage_01_get_data]: >>>>> stage GET_DATA completed!<<<<<
+
+[2022-05-14 12:22:51,569: INFO: stage_01_get_data]: 
+********************
+[2022-05-14 12:22:51,569: INFO: stage_01_get_data]: >>>>> stage GET_DATA started <<<<<
+[2022-05-14 12:22:51,570: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-05-14 12:22:51,571: INFO: common]: created directory at: data
+[2022-05-14 12:37:08,411: INFO: stage_01_get_data]: File :: data\data.zip is created 
+ with info :: Content-Type: application/octet-stream
+Accept-Ranges: bytes
+Server: Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0
+x-ms-blob-content-md5: 4TekUHNw2UJGm20meiTqBA==
+Last-Modified: Mon, 09 May 2022 20:42:07 GMT
+ETag: "0x8DA31FC621E01C4"
+Content-Length: 824887076
+Date: Sat, 14 May 2022 06:52:52 GMT
+Connection: close
+
+ 
+ at data\data.zip...
+[2022-05-14 12:37:08,411: INFO: stage_01_get_data]: >>>>> stage GET_DATA completed!<<<<<
+
+[2022-05-14 12:46:22,764: INFO: stage_01_get_data]: 
+********************
+[2022-05-14 12:46:22,764: INFO: stage_01_get_data]: >>>>> stage GET_DATA started <<<<<
+[2022-05-14 12:46:22,764: ERROR: stage_01_get_data]: main() missing 1 required positional argument: 'params_path'
+Traceback (most recent call last):
+  File "D:\Data Science\Deep Learning\MLFlow-CNN-app\src\stage_01_get_data.py", line 52, in <module>
+    main(config_path=parsed_args.config)
+TypeError: main() missing 1 required positional argument: 'params_path'
+[2022-05-14 12:47:27,384: INFO: stage_01_get_data]: 
+********************
+[2022-05-14 12:47:27,384: INFO: stage_01_get_data]: >>>>> stage GET_DATA started <<<<<
+[2022-05-14 12:47:27,385: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-05-14 12:47:27,385: INFO: common]: created directory at: data
+[2022-05-14 12:47:27,385: INFO: stage_01_get_data]: Downloading started......
+[2022-05-14 12:47:27,386: ERROR: stage_01_get_data]: local variable 'filename' referenced before assignment
+Traceback (most recent call last):
+  File "D:\Data Science\Deep Learning\MLFlow-CNN-app\src\stage_01_get_data.py", line 52, in <module>
+    main(config_path=parsed_args.config)
+  File "D:\Data Science\Deep Learning\MLFlow-CNN-app\src\stage_01_get_data.py", line 41, in main
+    logging.info(f"File :: {filename} is already present.....")
+UnboundLocalError: local variable 'filename' referenced before assignment
+[2022-05-14 12:48:59,236: INFO: stage_01_get_data]: 
+********************
+[2022-05-14 12:48:59,236: INFO: stage_01_get_data]: >>>>> stage GET_DATA started <<<<<
+[2022-05-14 12:48:59,237: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-05-14 12:48:59,237: INFO: common]: created directory at: data
+[2022-05-14 12:48:59,237: INFO: stage_01_get_data]: Downloading started......
+[2022-05-14 12:48:59,237: INFO: stage_01_get_data]: File :: data.zip is already present.....
+[2022-05-14 12:48:59,237: INFO: stage_01_get_data]: >>>>> stage GET_DATA completed!<<<<<
+
+[2022-05-14 12:49:48,373: INFO: stage_01_get_data]: 
+********************
+[2022-05-14 12:49:48,373: INFO: stage_01_get_data]: >>>>> stage GET_DATA started <<<<<
+[2022-05-14 12:49:48,373: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-05-14 12:49:48,529: INFO: common]: created directory at: data
+[2022-05-14 12:49:48,529: INFO: stage_01_get_data]: Downloading started......

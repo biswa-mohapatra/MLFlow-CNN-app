@@ -16,6 +16,11 @@ MLflow project template
 conda create --prefix ./env python=3.7 -y
 ```
 
+### To access conda from c drive to d, through bash
+---------------------
+    . C:/Users/DELL/Anaconda3/etc/profile.d/conda.sh
+---------------------
+
 ```bash
 conda activate ./env
 ```
@@ -33,5 +38,8 @@ pip install -r requirements.txt
 ```bash
 conda env export > conda.yaml
 ```
-
+### Copy a template of python files
+'''bash
+cp src/stage_00_template.py src/stage_01_get_data.py
+''' 
 ### STEP 06- commit and push the changes to the remote repository
