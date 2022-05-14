@@ -132,3 +132,4 @@ mlruns/
 env/
 data/
 logs/running_logs.log
+data/bad_data
