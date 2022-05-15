@@ -44,11 +44,15 @@ def main(config_path):
     
     # Uzipping ops
     destination = config["DATA"]["unzip_data_dir"]
-    create_directories([destination]) ## creating the destination directory
-    unzip_file(data_file_path,destination)
+    if not os.path.exists(destination):
+        create_directories([destination]) ## creating the destination directory
+        unzip_file(data_file_path,destination)
+        # Validating the data
+        validating_img(config)
+    else:
+        logging.info(f"Data already extracted :: {destination}")
 
-    # Validating the data
-    validating_img(config)
+    
 
 if __name__ == '__main__':
     args = argparse.ArgumentParser()

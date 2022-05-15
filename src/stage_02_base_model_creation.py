@@ -46,9 +46,9 @@ def main(config_path):
     )
 
     # Saving the model 
-    path_to_model_dir = os.path.join(config["Data"]["local_dir"],config["Data"]["model_dir"])
+    path_to_model_dir = os.path.join(config["DATA"]["local_dir"],config["DATA"]["model_dir"])
 
-    path_to_model = os.path.join(path_to_model_dir,config["Data"]["initial_model_file"])
+    path_to_model = os.path.join(path_to_model_dir,config["DATA"]["initial_model_file"])
     
     create_directories([path_to_model_dir])
     classifier.save(path_to_model)
