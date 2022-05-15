@@ -44,6 +44,16 @@ def main(config_path):
     loss=params["loss"],
     metrics=params["metrics"]
     )
+
+    # Saving the model 
+    path_to_model_dir = os.path.join(config["Data"]["local_dir"],config["Data"]["model_dir"])
+
+    path_to_model = os.path.join(path_to_model_dir,config["Data"]["initial_model_file"])
+    
+    create_directories([path_to_model_dir])
+    classifier.save(path_to_model)
+    logging.info(f"Model is saved at :: {path_to_model}")
+
     pass
 
 
