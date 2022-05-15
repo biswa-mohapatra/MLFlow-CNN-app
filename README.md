@@ -43,3 +43,21 @@ conda env export > conda.yaml
 cp src/stage_00_template.py src/stage_01_get_data.py
 ''' 
 ### STEP 06- commit and push the changes to the remote repository
+
+## MLFlow commands
+
+### Command to run MLFlow Project files
+'''bash
+mlflow run . --no-conda
+''' 
+
+### runany specific entry point in MLFlow Project files
+'''bash
+mlflow run . -e get_data --no-conda
+''' 
+
+### runany specific entry point with certain configuration in MLFlow Project files
+'''bash
+mlflow run . -e get_data -P configs/your_config.yaml --no-conda
+''' 
+
