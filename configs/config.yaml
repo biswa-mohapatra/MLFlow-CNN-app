@@ -7,6 +7,8 @@ DATA:
   unzip_data_dir: data
   bad_data: bad_data
   parent_data_dir: PetImages
+  model_dir: model
+  initial_model_file: init_model.h5
 
 params:
   learning_rate: 0.001
