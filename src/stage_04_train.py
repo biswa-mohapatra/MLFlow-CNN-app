@@ -4,6 +4,7 @@ import shutil
 from tqdm import tqdm
 import logging
 import tensorflow as tf
+import mlflow
 from src.utils.common import read_yaml, create_directories
 import random
 
@@ -70,6 +71,11 @@ def main(config_path):
     
     classifier.save(trained_model_file)
     logging.info(f"Trained model saved at :: {trained_model_file}")
+
+    # saving the model in mlflow way
+    with mlflow.run() as run:
+        mlflow.log_params(params)
+        mlflow.keras.log_model(classifier, "model")
     pass
 
 
