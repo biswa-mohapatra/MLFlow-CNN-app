@@ -23,6 +23,7 @@ def main():
         mlflow.run(".","get_data",use_conda=False)
         # mlflow.run(".","get_data",parameters{},use_conda=False) , we can define params with key:value pair.
         mlflow.run(".","base_model_creation",use_conda=False)
+        mlflow.run(".","training",use_conda=False)
     pass
 
 
