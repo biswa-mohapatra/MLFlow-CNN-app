@@ -133,3 +133,6 @@ env/
 data/
 logs/running_logs.log
 data/bad_data
+model/trained_model.h5
+model/initial_model.h5
+logs/running_logs.log
