@@ -9,7 +9,7 @@ from src.utils.common import read_yaml, create_directories
 import random
 
 
-STAGE = "STAGE_NAME" ## <<< change stage name 
+STAGE = "TRAINING" ## <<< change stage name 
 
 logging.basicConfig(
     filename=os.path.join("logs", 'running_logs.log'), 
@@ -73,7 +73,7 @@ def main(config_path):
     logging.info(f"Trained model saved at :: {trained_model_file}")
 
     # saving the model in mlflow way
-    with mlflow.run() as run:
+    with mlflow.start_run() as runs:
         mlflow.log_params(params)
         mlflow.keras.log_model(classifier, "model")
     pass
